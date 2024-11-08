@@ -72,7 +72,7 @@ const prefix = computed(() => {
 <template>
   <div px="4" flex="~ col-reverse sm:col" h-full w-full gap-4 pb-8 pt-2>
     <div grid="~ cols-1 sm:cols-3 wrap" gap="6 sm:(x-5 y-3)">
-      <InputFile border="~ gray/25" shadow="~ gray/25" @file="onFileChange">
+      <InputFile bg="hover:neutral-300" border="~ gray/25" shadow="~ gray/25" @file="onFileChange">
         <div text="neutral-600 dark:neutral-400" min-w-46 flex justify-center px-4 py-2>
           <div i-carbon:document-add text-lg />
           <p font-semi-bold pl-2 text-nowrap>
@@ -131,6 +131,7 @@ const prefix = computed(() => {
     </div>
     <InputFile
       v-else
+      bg="neutral-200 hover:neutral-300"
       text="neutral-600 dark:neutral-400"
       aspect-1 h-full w-full rounded-lg
       @file="onFileChange"

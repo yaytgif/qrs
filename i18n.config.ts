@@ -32,7 +32,8 @@ export default defineI18nConfig(() => ({
       noData: '无数据',
       noSignal: '无信号',
       notGranted: '未授权',
-      notSupported: '不支持'
+      notSupported: '不支持',
+      webScanCodeTips: '*请使用手机扫描二维码'
     },
     en: {
       send: 'Send',
@@ -64,7 +65,8 @@ export default defineI18nConfig(() => ({
       noData: 'No Data',
       noSignal: 'No Signal',
       notGranted: 'Not Granted',
-      notSupported: 'Not Supported'
+      notSupported: 'Not Supported',
+      webScanCodeTips: '*Please use mobile phone to scan QR code'
     },
   },
 }))

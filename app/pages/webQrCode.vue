@@ -17,9 +17,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    class="ml-5% aspect-square [&>svg]:h-full [&>svg]:w-90%"
-    h-full w-full overflow-hidden rounded="~ sm:lg"
-    v-html="qrCodeSVG"
-  />
+  <div>
+    <div class="ml-5% color-#f39c12 font-size-4">{{$t('webScanCodeTips')}}</div>
+    <div
+      class="ml-5% aspect-square [&>svg]:h-full [&>svg]:w-90%"
+      h-full w-full overflow-hidden rounded="~ sm:lg"
+      v-html="qrCodeSVG"
+    />
+  </div>
 </template>

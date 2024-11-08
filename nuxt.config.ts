@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
   i18n: {
-    defaultLocale: 'zh',
+    defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
   },
   typescript: {

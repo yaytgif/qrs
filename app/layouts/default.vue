@@ -18,7 +18,7 @@
             <span i-carbon-upload inline-block />
             Send
           </NuxtLink>
-          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/scan" active-class="!op100" flex="~ items-center gap-1">
+          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/webQrCode" active-class="!op100" flex="~ items-center gap-1">
             <span i-carbon-download inline-block />
             Receive
           </NuxtLink>
@@ -48,7 +48,7 @@
             Send
           </NuxtLink>
           <NuxtLink
-            to="/scan"
+            to="/webQrCode"
             active-class="!op100 bg-neutral-700 dark:bg-neutral-300 !text-neutral-100 !dark:text-neutral-900"
             rounded-full px-3 py-1
             op70 hover="text-blue"

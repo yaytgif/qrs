@@ -23,11 +23,11 @@
             Receive
           </NuxtLink>
         </div>
-        <div w-40 flex="~ <sm:1" justify-end text-2xl>
+        <!-- <div w-40 flex="~ <sm:1" justify-end text-2xl>
           <a href="https://github.com/qqrss/qrs" target="_blank" op70 hover="text-blue" duration-300 transition="all ease-in-out" flex="~ items-center gap-1">
             <span i-carbon:logo-github inline-block />
           </a>
-        </div>
+        </div> -->
 
         <!-- Deck -->
         <div

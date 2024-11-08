@@ -6,9 +6,9 @@ import { ref, onMounted } from 'vue'
 const qrCodeSVG = ref<string | null>(null) 
 const url = 'https://qrs-xi.vercel.app/scan' 
 
-onMounted(async () => {
+onMounted(() => {
   try {
-    qrCodeSVG.value = await renderSVG(url)
+    qrCodeSVG.value = renderSVG(url)
   } catch (err) {
     console.error('二维码生成失败:', err)
   }

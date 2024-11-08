@@ -38,7 +38,7 @@ const isScan = computed(() => route.name === 'scan')
         <!-- Deck -->
         <div
           class="flex sm:hidden"
-          top="15px" left="55%" translate-x="-50%"
+          top="15px" left="65%" translate-x="-50%"
           bg="neutral-100 dark:neutral-900"
           fixed z-100 flex-1 justify-center gap-2 rounded-full p-2 text-sm
         >

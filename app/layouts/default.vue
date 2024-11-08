@@ -11,7 +11,9 @@ const isScan = computed(() => route.name === 'scan')
         <div w-40 flex="~" items-center gap-2 text-4xl>
           <img src="/logo.svg" alt="Qrs" size-1em>
           <h1>
-            Qrs
+            <a href="https://github.com/qqrss/qrs" target="_blank" hover="text-blue" duration-300 transition="all ease-in-out">
+              Qrs
+            </a>
           </h1>
         </div>
         <!-- Header -->

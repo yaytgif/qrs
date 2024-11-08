@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       alwaysRedirect: true,
       fallbackLocale: 'en',
-      cookieCrossOrigin: true
+      cookieCrossOrigin: true,
     },
   },
   typescript: {

@@ -11,7 +11,7 @@ export default defineI18nConfig(() => ({
       idealFPS: '最佳帧率',
       choose: '选择',
       idealScans: '最佳扫描次数',
-      downloadAsFile:  '下载为文件',
+      downloadAsFile: '下载为文件',
       openAsLink: '作为链接打开',
       filename: '文件名称',
       contentType: '内容类型',
@@ -33,7 +33,7 @@ export default defineI18nConfig(() => ({
       noSignal: '无信号',
       notGranted: '未授权',
       notSupported: '不支持',
-      webScanCodeTips: '*请使用手机扫描二维码'
+      webScanCodeTips: '*请使用手机扫描二维码',
     },
     en: {
       send: 'Send',
@@ -44,7 +44,7 @@ export default defineI18nConfig(() => ({
       idealFPS: 'Ideal FPS',
       choose: 'Choose',
       idealScans: 'Ideal Scans',
-      downloadAsFile:  'Download as file',
+      downloadAsFile: 'Download as file',
       openAsLink: 'Open as link',
       filename: 'Filename',
       contentType: 'Content-Type',
@@ -66,7 +66,7 @@ export default defineI18nConfig(() => ({
       noSignal: 'No Signal',
       notGranted: 'Not Granted',
       notSupported: 'Not Supported',
-      webScanCodeTips: '*Please use mobile phone to scan QR code'
+      webScanCodeTips: '*Please use mobile phone to scan QR code',
     },
   },
 }))

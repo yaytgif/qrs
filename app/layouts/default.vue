@@ -22,11 +22,11 @@ const isScan = computed(() => route.name === 'scan')
           flex-1 justify-center gap-8
           text-lg
         >
-          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap>
+          <NuxtLink hover="text-blue" transition="all ease-in-out" to="/" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap op70 duration-300>
             <span i-carbon-upload inline-block />
             {{ $t('send') }}
           </NuxtLink>
-          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/webQrCode" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap>
+          <NuxtLink hover="text-blue" transition="all ease-in-out" to="/webQrCode" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap op70 duration-300>
             <span i-carbon-download inline-block />
             {{ $t('receive') }}
           </NuxtLink>
@@ -47,11 +47,11 @@ const isScan = computed(() => route.name === 'scan')
           <NuxtLink
             to="/"
             active-class="!op100 bg-neutral-700 dark:bg-neutral-300 !text-neutral-100 !dark:text-neutral-900"
-            rounded-full px-3 py-1
-            op70 hover="text-blue"
+
+            hover="text-blue"
             flex="~ items-center gap-1"
-            whitespace-nowrap
-            transition="all ease-in-out" duration-300
+
+            transition="all ease-in-out" whitespace-nowrap rounded-full px-3 py-1 op70 duration-300
           >
             <span i-carbon-upload inline-block />
             {{ $t('send') }}
@@ -59,11 +59,11 @@ const isScan = computed(() => route.name === 'scan')
           <NuxtLink
             to="/webQrCode"
             active-class="!op100 bg-neutral-700 dark:bg-neutral-300 !text-neutral-100 !dark:text-neutral-900"
-            rounded-full px-3 py-1
-            op70 hover="text-blue"
+
+            hover="text-blue"
             flex="~ items-center gap-1"
-            whitespace-nowrap
-            transition="all ease-in-out" duration-300
+
+            transition="all ease-in-out" whitespace-nowrap rounded-full px-3 py-1 op70 duration-300
           >
             <span i-carbon-download inline-block />
             {{ $t('receive') }}

@@ -5,7 +5,7 @@ const isScan = computed(() => route.name === 'scan')
 </script>
 
 <template>
-  <div max-w="full sm:250" mx-auto w-full flex flex-col pb-30 overflow-hidden>
+  <div max-w="full sm:250" mx-auto w-full flex flex-col pb-30>
     <header flex flex-col gap-4 px-4 pb-4 pt-4 v-if="!isScan">
       <nav flex items-center>
         <div w-40 flex="~" items-center gap-2 text-4xl>
@@ -38,7 +38,7 @@ const isScan = computed(() => route.name === 'scan')
         <!-- Deck -->
         <div
           class="flex sm:hidden"
-          bottom="75px" left="50%" translate-x="-50%"
+          bottom="35px" left="50%" translate-x="-50%"
           bg="neutral-100 dark:neutral-900"
           fixed z-100 flex-1 justify-center gap-2 rounded-full p-2 text-sm
         >

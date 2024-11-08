@@ -1,6 +1,12 @@
+<script setup lang="ts">
+const route = useRoute()
+
+const isScan = computed(() => route.name === 'scan')
+</script>
+
 <template>
   <div max-w="full sm:250" mx-auto w-full flex flex-col pb-30>
-    <header flex flex-col gap-4 px-4 pb-4 pt-4>
+    <header flex flex-col gap-4 px-4 pb-4 pt-4 v-if="!isScan">
       <nav flex items-center>
         <div w-40 flex="~" items-center gap-2 text-4xl>
           <img src="/logo.svg" alt="Qrs" size-1em>

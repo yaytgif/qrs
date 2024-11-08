@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="aspect-square [&>svg]:h-full [&>svg]:w-full"
+    class="aspect-square [&>svg]:h-full [&>svg]:w-90% ml-5%"
     h-full w-full overflow-hidden rounded="~ sm:lg"
     v-html="qrCodeSVG"
   />

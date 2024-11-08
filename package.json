@@ -18,6 +18,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "9.0.0-rc.2",
     "birpc": "^0.2.19",
     "js-base64": "^3.7.7",
     "jsqr-es6": "1.4.0-1",

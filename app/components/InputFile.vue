@@ -33,7 +33,7 @@ function onFileChange(e: Event) {
       <slot>
         <div i-carbon:document-add text-lg />
         <p font-semi-bold pl-2>
-          <span>Choose</span>
+          <span>{{ $t('choose') }}</span>
         </p>
       </slot>
     </div>

@@ -6,7 +6,7 @@ const isScan = computed(() => route.name === 'scan')
 
 <template>
   <div max-w="full sm:250" mx-auto w-full flex flex-col pb-30>
-    <header flex flex-col gap-4 px-4 pb-4 pt-4 v-if="!isScan">
+    <header v-if="!isScan" flex flex-col gap-4 px-4 pb-4 pt-4>
       <nav flex items-center>
         <div w-40 flex="~" items-center gap-2 text-4xl>
           <img src="/logo.svg" alt="Qrs" size-1em>
@@ -20,13 +20,13 @@ const isScan = computed(() => route.name === 'scan')
           flex-1 justify-center gap-8
           text-lg
         >
-          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/" active-class="!op100" flex="~ items-center gap-1">
+          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap>
             <span i-carbon-upload inline-block />
-            Send
+            {{ $t('send') }}
           </NuxtLink>
-          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/webQrCode" active-class="!op100" flex="~ items-center gap-1">
+          <NuxtLink op70 hover="text-blue" duration-300 transition="all ease-in-out" to="/webQrCode" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap>
             <span i-carbon-download inline-block />
-            Receive
+            {{ $t('receive') }}
           </NuxtLink>
         </div>
         <!-- <div w-40 flex="~ <sm:1" justify-end text-2xl>
@@ -48,10 +48,11 @@ const isScan = computed(() => route.name === 'scan')
             rounded-full px-3 py-1
             op70 hover="text-blue"
             flex="~ items-center gap-1"
+            whitespace-nowrap
             transition="all ease-in-out" duration-300
           >
             <span i-carbon-upload inline-block />
-            Send
+            {{ $t('send') }}
           </NuxtLink>
           <NuxtLink
             to="/webQrCode"
@@ -59,10 +60,11 @@ const isScan = computed(() => route.name === 'scan')
             rounded-full px-3 py-1
             op70 hover="text-blue"
             flex="~ items-center gap-1"
+            whitespace-nowrap
             transition="all ease-in-out" duration-300
           >
             <span i-carbon-download inline-block />
-            Receive
+            {{ $t('receive') }}
           </NuxtLink>
         </div>
       </nav>

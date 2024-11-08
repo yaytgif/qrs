@@ -50,21 +50,21 @@ onMounted(() => {
   <div w-full flex flex-col items-center gap-4>
     <Collapsable w-full>
       <div grid-cols="[150px_1fr]" font="mono!" grid w-full gap-x-4 gap-y-2 overflow-x-auto whitespace-nowrap p2 text-sm>
-        <span text-neutral-500>Indices</span>
+        <span text-neutral-500>{{$t('indices')}}</span>
         <span text-right md:text-left>{{ block?.indices }}</span>
-        <span text-neutral-500>Total</span>
+        <span text-neutral-500>{{$t('total')}}</span>
         <span text-right md:text-left>{{ block?.k }}</span>
-        <span text-neutral-500>Bytes</span>
+        <span text-neutral-500>{{$t('bytes')}}</span>
         <span text-right md:text-left>{{ bytes }}</span>
-        <span text-neutral-500>Bitrate</span>
+        <span text-neutral-500>{{$t('bitrate')}}</span>
         <span text-right md:text-left>{{ ((block?.bytes || 0) / 1024 * framePerSecond).toFixed(2) }} Kbps</span>
-        <span text-neutral-500>Frame Count</span>
+        <span text-neutral-500>{{$t('frameCount')}}</span>
         <span text-right md:text-left>{{ count }}</span>
-        <span text-neutral-500>FPS</span>
+        <span text-neutral-500>{{$t('FPS')}}</span>
         <span text-right md:text-left>{{ framePerSecond.toFixed(2) }}</span>
-        <span text-neutral-500>Filename</span>
+        <span text-neutral-500>{{$t('filename')}}</span>
         <span text-right md:text-left>{{ props.filename }}</span>
-        <span text-neutral-500>Content Type</span>
+        <span text-neutral-500>{{$t('contentType')}}</span>
         <span text-right md:text-left>{{ props.contentType }}</span>
       </div>
     </Collapsable>

@@ -21,7 +21,7 @@ defineProps<{
         <span>{{ (receivedBytes / 1024).toFixed(2) }} / {{ (bytes / 1024).toFixed(2) }} KB <span text-neutral-400>({{ (receivedBytes / bytes * 100).toFixed(2) }}%)</span></span>
       </template>
       <template v-else>
-        No Data
+       {{$t('noData')}}
       </template>
     </div>
     <div
@@ -29,21 +29,21 @@ defineProps<{
       top="50%" left="50%" translate-x="[-50%]" text="neutral-500" absolute flex flex-col items-center gap-2 font-mono
     >
       <div i-carbon:circle-dash animate-spin animate-duration-5000 text-3xl />
-      <p>No Signal</p>
+      <p>{{$t('noSignal')}}</p>
     </div>
     <div
       v-else-if="cameraSignalStatus === CameraSignalStatus.NotGranted"
       top="50%" left="50%" translate-x="[-50%]" text="neutral-500" absolute flex flex-col items-center gap-2 font-mono
     >
       <div i-carbon:error-outline text-3xl />
-      <p>Not Granted</p>
+      <p>{{$t('notGranted')}}</p>
     </div>
     <div
       v-else-if="cameraSignalStatus === CameraSignalStatus.NotSupported"
       top="50%" left="50%" translate-x="[-50%]" text="neutral-500" absolute flex flex-col items-center gap-2 font-mono
     >
       <div i-carbon:circle-dash text-3xl />
-      <p>Not Supported</p>
+      <p>{{$t('notSupported')}}</p>
     </div>
     <p absolute right-1 top-1 border="~ gray:50 rounded-md" bg-black:75 px2 py1 text-white font-mono shadow>
       {{ fps.toFixed(0) }} hz | {{ currentValidBytesSpeed }} <span text-neutral-400>({{ currentBytes }})</span>

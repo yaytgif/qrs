@@ -76,13 +76,13 @@ const prefix = computed(() => {
         <div text="neutral-600 dark:neutral-400" min-w-46 flex justify-center px-4 py-2>
           <div i-carbon:document-add text-lg />
           <p font-semi-bold pl-2 text-nowrap>
-            <span>Change File</span>
+            <span>{{ $t('changeFile') }}</span>
           </p>
         </div>
       </InputFile>
       <div w-full inline-flex flex-1 flex-row items-center sm:col-span-2>
         <span min-w-32>
-          <span pr-2 text-neutral-400>Slice Size</span>
+          <span pr-2 text-neutral-400>{{ $t('sliceSize') }}</span>
         </span>
         <input
           v-model.lazy="sliceSize"
@@ -96,14 +96,14 @@ const prefix = computed(() => {
       <div>
         <label inline-flex flex-row select-none items-center>
           <span min-w-32>
-            <span text-neutral-400>Scanner URL</span>
+            <span text-neutral-400>{{ $t('scannerURL') }}</span>
           </span>
           <InputCheckbox v-model="isPrefixed" />
         </label>
       </div>
       <div w-full inline-flex flex-1 flex-row items-center sm:col-span-2>
         <span min-w-32>
-          <span pr-2 text-neutral-400>Ideal FPS</span>
+          <span pr-2 text-neutral-400>{{ $t('idealFPS') }}</span>
           <span font-mono>{{ throttledFps.toFixed(0) }}hz</span>
         </span>
         <InputSlide

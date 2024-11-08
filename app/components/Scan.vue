@@ -375,7 +375,7 @@ function now() {
             class="block w-full rounded-md bg-white px2 py1 text-center text-sm dark:bg-neutral-8"
             border="~ gray/25 hover:gray:10" shadow="~ gray/25"
           >
-            Download as file
+            {{$t('downloadAsFile')}}
           </a>
           <a
             v-else-if="dataType === 'link'"
@@ -385,7 +385,7 @@ function now() {
             class="block w-full rounded-md bg-white px2 py1 text-center text-sm dark:bg-neutral-8"
             border="~ gray/25 hover:gray:10" shadow="~ gray/25"
           >
-            Open as link
+            {{$t('openAsLink')}}
           </a>
         </div>
       </div>
@@ -417,32 +417,32 @@ function now() {
 
     <Collapsable label="Inspect">
       <div grid-cols="[150px_1fr]" font="mono!" :class="endTime ? 'text-green-500' : ''" grid gap-x-4 gap-y-2 overflow-x-auto whitespace-nowrap p2 text-sm>
-        <span text-neutral-500>Filename</span>
+        <span text-neutral-500>{{$t('filename')}}</span>
         <span text-right md:text-left>{{ filename || '<unknown>' }}</span>
-        <span text-neutral-500>Content-Type</span>
+        <span text-neutral-500>{{$t('contentType')}}</span>
         <span text-right md:text-left>{{ contentType || '<unknown>' }}</span>
-        <span text-neutral-500>Checksum</span>
+        <span text-neutral-500>{{$t('checksum')}}</span>
         <span text-right md:text-left>{{ checksum }}</span>
-        <span text-neutral-500>Indices</span>
+        <span text-neutral-500>{{$t('indices')}}</span>
         <span text-right md:text-left>{{ k }}</span>
-        <span text-neutral-500>Decoded</span>
+        <span text-neutral-500>{{$t('decoded')}}</span>
         <span text-right md:text-left>{{ decodedBlocks }}</span>
-        <span text-neutral-500>Received blocks</span>
+        <span text-neutral-500>{{$t('receivedBlocks')}}</span>
         <span text-right md:text-left>{{ decoderStatus.encodedCount }}</span>
-        <span text-neutral-500>Expected bytes</span>
+        <span text-neutral-500>{{$t('expectedBytes')}}</span>
         <span text-right md:text-left>{{ bytesFormatted }}</span>
-        <span text-neutral-500>Received bytes</span>
+        <span text-neutral-500>{{$t('receivedBytes')}}</span>
         <span text-right md:text-left>{{ receivedBytesFormatted }} ({{ bytes === 0 ? 0 : (receivedBytes / bytes * 100).toFixed(2) }}%)</span>
-        <span text-neutral-500>Time elapsed</span>
+        <span text-neutral-500>{{$t('timeElapsed')}}</span>
         <span text-right md:text-left>{{ k === 0 ? 0 : (((endTime || now()) - startTime) / 1000).toFixed(2) }} s</span>
-        <span text-neutral-500>Average bitrate</span>
+        <span text-neutral-500>{{$t('averageBitrate')}}</span>
         <span text-right md:text-left>{{ (receivedBytes / 1024 / ((endTime || now()) - startTime) * 1000).toFixed(2) }} Kbps</span>
       </div>
     </Collapsable>
 
     <Collapsable v-if="k">
       <template #label>
-        <span>Packets</span>
+        <span>{{$t('packets')}}</span>
         <span ml-2 text-neutral-400>({{ k }})</span>
       </template>
       <div flex="~ col gap-2" p2>

@@ -6,7 +6,7 @@ const isScan = computed(() => route.name === 'scan')
 
 <template>
   <div max-w="full sm:250" mx-auto w-full flex flex-col pb-30>
-    <header v-if="!isScan" flex flex-col gap-4 px-4 pb-4 pt-4>
+    <header flex flex-col gap-4 px-4 pb-4 pt-4>
       <nav flex items-center>
         <div w-40 flex="~" items-center gap-2 text-4xl>
           <img src="/logo.svg" alt="Qrs" size-1em>
@@ -18,8 +18,9 @@ const isScan = computed(() => route.name === 'scan')
         </div>
         <!-- Header -->
         <div
-          class="hidden sm:flex"
-          flex-1 justify-center gap-8
+          v-if="!isScan"
+          class="hidden sm:flex" flex-1 justify-center
+          gap-8
           text-lg
         >
           <NuxtLink hover="text-blue" transition="all ease-in-out" to="/" active-class="!op100" flex="~ items-center gap-1" whitespace-nowrap op70 duration-300>
@@ -39,10 +40,12 @@ const isScan = computed(() => route.name === 'scan')
 
         <!-- Deck -->
         <div
+          v-if="!isScan"
           class="flex sm:hidden"
-          top="15px" left="65%" translate-x="-50%"
-          bg="neutral-100 dark:neutral-900"
-          fixed z-100 flex-1 justify-center gap-2 rounded-full p-2 text-sm
+          top="15px" left="65%"
+          translate-x="-50%"
+          bg="neutral-100 dark:neutral-900" fixed z-100 flex-1 justify-center gap-2 rounded-full p-2
+          text-sm
         >
           <NuxtLink
             to="/"
